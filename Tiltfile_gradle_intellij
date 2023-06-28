@@ -11,7 +11,7 @@ k8s_custom_deploy(
     container_selector='workload',
 
     # Live Update IntelliJ:
-    deps=['build.gradle.kts', './build/classes/java/main', './build/resources/main'],
+    deps=['build.gradle', './build/classes/java/main', './build/resources/main'],
     live_update=[
        sync('./build/classes/java/main', '/workspace/BOOT-INF/classes'),
        sync('./build/resources/main', '/workspace/BOOT-INF/classes')
